@@ -5,8 +5,7 @@ export default {
 </script>
 
 <template>
-  <header>
-    Header Area
+  <header class="padded">
     <nav>
       This is the navigation menu
     </nav>
@@ -15,10 +14,7 @@ export default {
 
 <style scoped lang="scss">
 header {
-  background: red;
-
   nav {
-    background: blue;
   }
 }
 </style>

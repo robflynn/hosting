@@ -40,6 +40,7 @@
         Loading...
       </div>
       <div v-else>
+        <div class="padded">
         <table>
           <thead>
             <th>
@@ -72,11 +73,47 @@
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<style>
+<style lang="scss">
   @import "./css/reset.css";
+
+  .padded {
+    padding: 10px;
+  }
+
+  table {
+    $cellPadding: 10px;
+    width: 100%;
+
+    th,td {
+      padding: $cellPadding;
+    }
+
+    thead {
+      th {
+        text-align: left;
+        background: #444;
+        color: #eee;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+        }
+
+        &:hover td {
+          background: rgba(0, 0, 0, 0.1)
+        }
+      }
+
+    }
+  }
 </style>
