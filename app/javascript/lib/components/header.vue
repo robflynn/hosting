@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <header class="padded">
+  <header>
     <nav>
       This is the navigation menu
     </nav>
