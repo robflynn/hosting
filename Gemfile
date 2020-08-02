@@ -43,6 +43,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   gem 'rb-readline'
+
+  gem 'annotate'
 end
 
 group :test, :development do
