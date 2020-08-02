@@ -50,6 +50,8 @@ end
 group :test, :development do
   gem 'faker'
 
+  gem 'simplecov'
+
   gem 'rspec-rails', '~> 4.0.1'
 
   # Adds support for Capybara system testing and selenium driver
