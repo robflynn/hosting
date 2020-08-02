@@ -9,6 +9,7 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
+gem 'mysql2', '~> 0.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -44,7 +45,11 @@ group :development do
   gem 'rb-readline'
 end
 
-group :test do
+group :test, :development do
+  gem 'faker'
+
+  gem 'rspec-rails', '~> 4.0.1'
+
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
