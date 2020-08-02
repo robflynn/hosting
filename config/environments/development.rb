@@ -62,4 +62,10 @@ Rails.application.configure do
 
   # Attach our middleware live reload layer
   config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
+
+  # Mostly just using rails for the api, don't need the javascript and
+  # css stuff.  Any presentational helpers will be either added manually
+  # or will be added as presenters.
+  config.generators.assets = false
+  config.generators.helper = false
 end
